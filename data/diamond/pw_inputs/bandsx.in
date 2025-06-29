@@ -1,0 +1,6 @@
+&bands
+  prefix = 'di-bands'
+  outdir = './'
+  lsym = .false.  
+  filband = 'diamond.bands_pw.dat'
+/

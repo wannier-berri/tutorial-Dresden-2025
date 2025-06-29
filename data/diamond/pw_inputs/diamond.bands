@@ -1,0 +1,25 @@
+ &control
+    calculation='bands'
+    pseudo_dir = './',
+    outdir='./',
+    prefix='di-bands'
+ /
+ &system    
+    ibrav=  2, celldm(1) =6.1, nat=  2, ntyp= 1,
+    ecutwfc =40.0, nbnd = 20,
+ /
+ &electrons
+    conv_thr =  1.0d-11
+ /
+ATOMIC_SPECIES
+ C  12.0  C.pz-vbc.UPF
+ATOMIC_POSITIONS {crystal}
+C -0.125 -0.125 -0.125
+C  0.125  0.125  0.125
+K_POINTS {crystal_b}
+5
+0.50000  0.50000 0.5000  20 # L 
+0.00000  0.00000 0.0000  20 # G 
+0.50000 -0.50000 0.0000  20 # X 
+0.37500 -0.37500 0.0000  20 # K 
+0.00000  0.00000 0.0000  20 # G 
